@@ -26,7 +26,7 @@ class Nav extends Component {
                 {
                     this.state.list.map((item) => {
                         return (
-                        <div>{item}</div>
+                        <div key={item}>{item}</div>
                         )
                     })
                 }
