@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header'
 import Nav from './components/Nav'
 import MyTable from './components/MyTable'
+import MyTest from './components/MyTest'
 import { Button } from 'antd';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
@@ -15,7 +16,8 @@ class App extends Component {
         <Router>
           <Route path="/">
               <Route path="/table" component={MyTable}></Route>
-              <Route path="/nav" components={Nav} />
+              <Route path="/nav" component={Nav} />
+              <Route path="/test" component={MyTest} />
           </Route>
         </Router>
       </div>
