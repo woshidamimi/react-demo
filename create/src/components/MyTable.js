@@ -8,14 +8,24 @@ export default class MyTable extends Component {
     }
     render() {
         let columns = [{
-            title: '姓名'
+            title: '姓名',
+            dataIndex: 'name'
         },
         {
-            title: '地址'
+            title: '地址',
+            dataIndex: 'address'
         }
+        ];
+        let data = [
+            {
+                name: 'job'
+            },
+            {
+                name: 'bob'
+            }
         ]
         return (
-            <Table columns={columns}></Table>
+            <Table bordered columns={columns} dataSource={data}></Table>
         )
     }
 }
